@@ -12,8 +12,10 @@ public class ConditionalStatements {
 
         // TODO: 1 - Write an if statement that prints "Positive" if a number is greater than 0
         // Declare an int variable called number and assign it a positive value.
-
-        int number = 7;
+        int number = 1;
+        if(number > 0){
+            System.out.println("Positive");
+        }
 
         // TODO: 2 - Add an else clause to the above that prints "Not positive"
         // Change the value of number to a negative value or 0 to test both branches.
