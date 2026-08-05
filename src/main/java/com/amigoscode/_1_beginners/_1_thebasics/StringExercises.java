@@ -17,6 +17,7 @@ public class StringExercises {
 
         // TODO: 1 - Get the length of the 'message' string and print it
         // Hint: Use the .length() method
+        System.out.println(message.length());
 
 
         // TODO: 2 - Convert 'message' to uppercase and lowercase, and print both
