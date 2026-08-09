@@ -12,34 +12,63 @@ public class LoopExercises {
 
         // TODO: 1 - Write a for loop to print numbers 1 to 10
         // Hint: for (int i = 1; i <= 10; i++) { ... }
+        for (int i=0; i<=10; i++){
+            System.out.println(i);
+        }
+
 
 
         // TODO: 2 - Write a while loop to print numbers 10 down to 1 (countdown)
         // Hint: Declare a variable before the loop, use a condition, and decrement inside the loop.
+        int i =10;
+        while(i>=1){
+            System.out.println(i);
+            i-=1;
+        }
 
 
         // TODO: 3 - Write a do-while loop that runs at least once
         // Print "This runs at least once!" inside the loop.
         // Use a condition that is false so the loop only runs once.
         // Hint: do { ... } while (condition);
+        int j =10;
+
+        do {
+            System.out.println("This runs at least once!");
+            j++;
+        } while (j < 5);
 
 
         // TODO: 4 - Write a for loop to print only even numbers from 1 to 20
         // Hint: Use an if statement with the modulus operator (%) inside the loop,
         //       or increment by 2 starting from 2.
+        for (i=0; i<=20; i++){
+            if (i%2==0){
+                System.out.println(i + " is even");
+            }
+        }
 
 
         // TODO: 5 - Write a for loop to calculate the factorial of 5 (5! = 120)
         // Declare a variable called factorial and initialize it to 1.
         // Multiply factorial by each number from 1 to 5.
         // Print the result.
+        int factorial = 1;
+        for (int k=1 ; k<=5; k++){
+            factorial *= k ;
+        }
+        System.out.println("5! = " + factorial);
+
 
 
         // TODO: 6 - Use an enhanced for loop (for-each) to iterate over a String array
         // Declare a String array called fruits with at least 4 fruit names.
         // Use an enhanced for loop to print each fruit.
+        String[] fruits = {"Apple", "Banana", "Cherry", "Blueberry", "Orange"};
 
-
+        for (String fruit : fruits){
+            System.out.println(fruit);
+        }
         // TODO: 7 - Write a nested for loop to print a 3x3 multiplication table
         // The output should look like:
         //   1  2  3
@@ -47,6 +76,12 @@ public class LoopExercises {
         //   3  6  9
         // Hint: Use System.out.print() for values on the same row,
         //       and System.out.println() to move to the next row.
+        for (int row = 1; row<=3; row++){
+            for(int col =1; col<=3; col++){
+                System.out.print(row * col + " ");
+            }
+            System.out.println();
+        }
 
 
         // TODO: 8 - Use break and continue in a loop
@@ -54,6 +89,15 @@ public class LoopExercises {
         //   - Use 'continue' to skip the number 5 (do not print it)
         //   - Use 'break' to stop the loop when you reach 8
         // Print each number that is not skipped.
+        for (int num =1; num<=10; num++){
+            if(num==5){
+                continue;
+            }
+            if(num==8){
+                break;
+            }
+            System.out.println(num);
+        }
 
     }
 }
